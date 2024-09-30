@@ -1,30 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spice Company | Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spices Company</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <style>
+            body {
+                padding-top: 56px;
+            }
+            .navbar {
+                background-color: #f8b400;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                padding: 20px;
+            }
+        </style>
 </head>
+    
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">Spices Co.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section class="hero">
-        <h1>Welcome to Spice World</h1>
-        <p>Explore the finest spices from around the world.</p>
+    <!-- Carousel -->
+    <div id="spicesCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x500?text=Spices+Carousel+1" class="d-block w-100" alt="Spices">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x500?text=Spices+Carousel+2" class="d-block w-100" alt="Spices">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x500?text=Spices+Carousel+3" class="d-block w-100" alt="Spices">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#spicesCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#spicesCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <!-- About Section -->
+    <section class="container my-5">
+        <h2 class="text-center">Welcome to Spices Co.</h2>
+        <p class="text-center">We provide the finest quality spices from around the world. Browse our catalog to explore our products.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Spice Company. All rights reserved.</p>
+    <!-- Sample Product Section -->
+    <section class="container">
+        <h3 class="text-center">Our Featured Spices</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Cinnamon" class="card-img-top" alt="Cinnamon">
+                    <div class="card-body">
+                        <h5 class="card-title">Cinnamon</h5>
+                        <p class="card-text">Premium quality cinnamon sourced from the best farms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Turmeric" class="card-img-top" alt="Turmeric">
+                    <div class="card-body">
+                        <h5 class="card-title">Turmeric</h5>
+                        <p class="card-text">Organic turmeric known for its rich flavor and medicinal properties.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Pepper" class="card-img-top" alt="Pepper">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Pepper</h5>
+                        <p class="card-text">High-quality black pepper with a bold flavor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 Spices Co. | Designed with <i class="bi bi-heart-fill text-danger"></i> by Us.</p>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
